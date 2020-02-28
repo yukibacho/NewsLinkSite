@@ -1,0 +1,6 @@
+USE mysql
+CREATE TABLE NEWS_TBL (
+  ID int DEFAULT NULL,
+  Topic varchar(128) DEFAULT NULL,
+  Link varchar(256) DEFAULT NULL
+) 
