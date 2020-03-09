@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>{{props.title}}</title>
+        <style type="text/css">
+            .cp_btn {
+                position: relative;
+                display: block;
+                width: 160px;
+                padding: 0.8em;
+                text-align: center;
+                font-weight: bold;
+                text-decoration: none;
+                color: #FFF;
+                text-shadow: 0 0 5px rgba(255, 255, 255, 0.0);
+                background: #1A237E;
+                transition: .4s;
+                border-radius: 4px;
+            }
+            .cp_btn:hover {
+                text-shadow: -6px 0px 15px rgba(255, 255, 240, 0.83), 6px 0px 15px rgba(255, 255, 240, 0.83);
+                transition: .4s;
+            }
+            p {
+                padding: 0.4em 0.5em;/*文字の上下 左右の余白*/
+                color: #494949;/*文字色*/
+                background: #f4f4f4;/*背景色*/
+                border-left: solid 5px #7db4e6;/*左線*/
+                border-bottom: solid 3px #d7d7d7;/*下線*/ 
+            }
+        </style>
+    </head>
+    <script language="javascript" type="text/javascript">
+        function back(){           
+            location.href = "/";               
+        }            
+        
+    </script>
+    <body>
+        <div id="contents">
+            <p>{{props.msg}}</p>
+            <label>正しい"PANDA ID"と"PASSWORD"を入力してください。</label>
+        </div>
+        <hr>                 
+        <input type="button" value="戻る" onclick="back()" class="cp_btn">
+    </body>
+</html>
