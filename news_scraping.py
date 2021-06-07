@@ -19,7 +19,7 @@ def getnews(user,password):
 	# 認証プロキシを指定
 	user = user
 	pw = password
-	proxyurl = "http://" + user + ":" + pw + "@proxy.intra.oki.co.jp:8080"
+	proxyurl = "http://" + user + ":" + pw + <プロキシサーバ:ポート番号>
 
 	# 環境変数に設定
 	os.environ["http_proxy"] = proxyurl
